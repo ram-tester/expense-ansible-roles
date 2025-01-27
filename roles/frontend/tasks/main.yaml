@@ -8,7 +8,7 @@
     name: nginx
     state: started
     enabled: yes
-  
+
 - name: include common role
   include_role:
     name: common
@@ -37,8 +37,7 @@
 
 - name: copy expense config
   ansible.builtin.template:
-    src: expense.conf
+    src: expense.conf.j2
     dest: /etc/nginx/default.d/expense.conf
-  notify: 
+  notify:
   - Restart Nginx
-  
