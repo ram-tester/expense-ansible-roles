@@ -1,4 +1,4 @@
-- name: configuruing mysql server
+- name: configuring mysql server
   hosts:  mysql
   become: yes
   # vars_files:
