@@ -37,7 +37,7 @@
 
 - name: copy expense config
   ansible.builtin.template:
-    src: expense.conf.j2
+    src: expense.conf
     dest: /etc/nginx/default.d/expense.conf
     remote_src: yes
   notify: 
